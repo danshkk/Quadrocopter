@@ -1,6 +1,117 @@
-{\rtf1\ansi\ansicpg1251\cocoartf2577
-\cocoatextscaling0\cocoaplatform0{\fonttbl}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+/*Шрифты
+Montserrat-Bold
+Montserrat-Regular
+font-family: 'Montserrat', sans-serif;
+Regular 400, Bold 700
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    margin: 0;
+    list-style: circle;
+    list-style-position: inside;
+}
+
+/* Общие стили */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Шрифта + Button */
+h2 {
+    font-family: 'Montserrat-Regular', sans-serif;
+    /* font-weight: 400; */
+    font-size: 92px;
+    line-height: 102px;
+    text-align: left;
+    color: #232323;
+}
+
+h3 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: left;
+    color: #000000;
+}
+
+h4 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: left;
+}
+
+p {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #92a1a5;
+    font-size: 14px;
+    line-height: 30px;
+    
+}
+
+.btn {
+    width: 182px;
+    height: 57px;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+    padding: 22px 36px;
+    border-radius: 29px;
+    -webkit-border-radius: 29px;
+    -moz-border-radius: 29px;
+    -ms-border-radius: 29px;
+    -o-border-radius: 29px;
+}
+
+.header-top__logo, .footer__logo {  
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.footer__rights, .header-top__num {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: #92a1a5;
+
+}
+/*Header*/
+header {
+    height: 100vh;
+    background: rgb(239,242,246);
+    background: linear-gradient(90deg, rgba(239,242,246,1) 60%, rgba(255,52,61,1) 60%);
+    background-position:center;
+    background-size:cover;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid blue;
+}
+
+/*About*/
+/*Features*/
+/*Generation*/
+/*Products*/
+/*Footer*/
