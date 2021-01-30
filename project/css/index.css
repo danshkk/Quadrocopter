@@ -99,7 +99,7 @@ p {
 header {
     height: 100vh;
     background: rgb(239,242,246);
-    background: linear-gradient(90deg, rgba(239,242,246,1) 60%, rgba(255,52,61,1) 60%);
+    background: linear-gradient(90deg, rgba(239,242,246,1) 62%, rgba(255,52,61,1) 62%);
     background-position:center;
     background-size:cover;
 }
@@ -110,7 +110,58 @@ header {
     border: 1px solid blue;
 }
 
+.header-top__info {
+}
+
+.header-top__menu menu {
+
+}
+
+.header__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__content-slider {
+}
+
+.header__content-article {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+}
+
+.header-content__image {
+    position: relative;
+    border: 1px solid green;
+}
+
 /*About*/
+.about {
+    border: 1px solid green;
+    display: flex;
+    height: 55vh;
+}
+
+.about__promo {
+    border: 1px solid green;
+    width: 30%;
+    background-image:url(../assets/images/About__promo-bg.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+
+}
+
+.about-potential {
+    border: 1px solid green;
+    width: 70%;
+    background-image:url(../assets/images/About-bg.png);
+    background-size:cover;
+    background-position:center;
+
 /*Features*/
 /*Generation*/
 /*Products*/
