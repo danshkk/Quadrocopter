@@ -206,4 +206,36 @@ header {
 
 
 /*Products*/
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 146px;
+    padding-top: 134px;
+}
+
+.products__content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 130px;
+    border: 1px solid green;
+}
+
+.product__title {
+    width: 755px;
+    margin-bottom: 65px;
+    line-height: 102px;
+}
+
+.product__btn {
+}
+.products__img {
+    border: 1px solid green;
+}
+
+.more {
+    height: 100vh;
+    background-image: url(../assets/images/More-jurneey-bg.png);
+}
+
 /*Footer*/
