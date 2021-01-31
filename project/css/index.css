@@ -93,7 +93,10 @@ p {
     font-size: 14px;
     line-height: 30px;
     color: #92a1a5;
+}
 
+.vision__title--red, .product__title--red {
+    color: #ff343d;
 }
 /*Header*/
 header {
@@ -107,14 +110,32 @@ header {
 .header-top {
     display: flex;
     justify-content: space-between;
-    border: 1px solid blue;
 }
 
 .header-top__info {
+    padding-left: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.header-top__menu menu {
+.header-top__menu {
+    padding-right: 180px;
+}
 
+.header-top__logo {
+    margin-right: 90px;
+}
+
+.menu__link {
+    color: white;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 16px;
+    
+}
+
+.menu__icon {
+    margin-left: 40px;
 }
 
 .header__content {
@@ -130,6 +151,8 @@ header {
 .header__content-article {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     border: 2px solid green;
 }
 
@@ -152,27 +175,47 @@ header {
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-potential {
     border: 1px solid green;
     width: 70%;
     background-image:url(../assets/images/About-bg.png);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-size:cover;
     background-position:center;
 }
+
+.about-potential__title {
+    color: white;
+    max-width: 350px;
+    margin-left: 90px;
+}
+
+.about-potential__btn {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    margin-right: 150px;
+}
+
 /*Features*/ 
 .features {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .features__title {
-    border: 1px solid red;
-    
+    border: 1px solid red;    
 }
 
 .features__elements {
@@ -198,10 +241,21 @@ header {
 
 .generation__vision {
     background-color: #232323;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .vision__title {
     color: white;
+    max-width: 755px;
+    margin-bottom: 50px;
+}
+
+.vision__btn {
+    align-self: flex-start;
 }
 
 
@@ -236,6 +290,32 @@ header {
 .more {
     height: 100vh;
     background-image: url(../assets/images/More-jurneey-bg.png);
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-end;
+    padding-bottom: 200px;
+}
+
+.more__title {
+    color: white;
+    margin-bottom: 55px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 /*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+
+.footer__logo {
+    margin-bottom: 35px;
+}
