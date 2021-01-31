@@ -52,7 +52,7 @@ h3 {
 }
 
 h4 {
-    font-family: 'Montserrat-Bold', sans-serif;
+    font-family: 'Montserrat-Regular', sans-serif;
     font-size: 30px;
     line-height: 60px;
     text-align: left;
@@ -161,8 +161,49 @@ header {
     background-image:url(../assets/images/About-bg.png);
     background-size:cover;
     background-position:center;
+}
+/*Features*/ 
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-/*Features*/
+}
+
+.features__title {
+    border: 1px solid red;
+    
+}
+
+.features__elements {
+    border: 1px solid red;
+    display: flex;
+    justify-content:center;
+    width: 100%;
+}
+
+.features__element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid green;
+}
+
+
 /*Generation*/
+.generation {
+    display: flex;
+}
+
+.generation__vision {
+    background-color: #232323;
+}
+
+.vision__title {
+    color: white;
+}
+
+
 /*Products*/
 /*Footer*/
