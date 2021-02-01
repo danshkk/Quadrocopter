@@ -108,20 +108,64 @@ header {
     background-size:cover;
     display: flex;
     flex-direction: column;
-
+    position: relative;
 }
+/*
+header::before {
+    content: "MARS";
+    display: inline-block;
+    width: 716px;
+    height: 1284px;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+    color: #ff343d;
+    font-size: 435px;
+    position: absolute;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    top: -29%;
+    left: 52%;
+    z-index: 4;
+    text-shadow: 0 0 55px rgb(0 1 1 / 15%);
+}
+*/
 
+/*HEADER TOP*/
 .header-top {
     display: flex;
     justify-content: space-between;
     padding-top: 70px;
 }
-
+/*HEADER TOP LEFT BLOCK*/
 .header-top__info {
     padding-left: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-top__logo {
+    margin-right: 90px;
+    position: relative;
+}
+
+.header-top__logo::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #eff2f6;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 3px solid #ff343d;
+    top: -2px;
 }
 
 .header-top__num {
@@ -135,16 +179,14 @@ header {
     display: inline-block;
     position: absolute;
     background-image:url(../assets/images/Footer-Phone.png);
-    top: 10px;
+    top: 8px;
     left: -20px;
 }
-
+/*HEADER TOP RIGHT BLOCK*/
 .header-top__menu {
     padding-right: 180px;
-}
-
-.header-top__logo {
-    margin-right: 90px;
+    position: relative;
+    z-index: 5;
 }
 
 .menu__link {
@@ -163,14 +205,14 @@ header {
     opacity: 30%;
     display: inline-block;
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     right: -2px;
 
 }
 .menu__icon {
     margin-left: 40px;
 }
-
+/*HEADER CONTENT*/
 .header__content {
     flex-grow: 1;
     display: flex;
@@ -190,7 +232,9 @@ header {
 }
 
 .article__title {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .article__subtitle {
@@ -200,19 +244,43 @@ header {
 
 .header-content__image {
     position: relative;
+    z-index: 5;
     border: 1px solid green;
 }
+
+.header-content__img {
+    position: relative;
+    z-index: 5;
+}
+
+.header-content__image::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    width: 652px;
+    height: 652px;
+    background-color: #ffffff;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 20%;
+    top: -8%;
+}
+
 
 /*About*/
 .about {
-    border: 1px solid green;
     display: flex;
     height: 55vh;
+    position: relative;
+    z-index: 6;
 }
 
 .about__promo {
-    border: 1px solid green;
-    width: 30%;
+    flex: 1 1 30%;
     background-image:url(../assets/images/About__promo-bg.png);
     background-size:cover;
     background-repeat: no-repeat;
@@ -224,20 +292,33 @@ header {
 }
 
 .about-potential {
-    border: 1px solid green;
-    width: 70%;
+    flex: 1 1 70%;
     background-image:url(../assets/images/About-bg.png);
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-size:cover;
     background-position:center;
+    z-index: 3;
+}
+
+.about-potential::after {
+    content: "";
+    display: inline-block;
+    width: 610px;
+    height: 590px;
+    background-color:black;
+    opacity: 65%;
+    position: absolute;
+    z-index: 1;
 }
 
 .about-potential__title {
     color: white;
     max-width: 350px;
     margin-left: 90px;
+    position: relative;
+    z-index: 3;
 }
 
 .about-potential__btn {
@@ -268,7 +349,7 @@ header {
     border: 1px solid red;
     display: flex;
     justify-content:space-between;
-    width: 70%;
+    width: 80%;
 }
 
 .features__element {
@@ -277,6 +358,7 @@ header {
     justify-content: center;
     align-items:center;
     border: 1px solid green;
+    flex: 1 1 25%;
 }
 
 .element__img {
@@ -298,10 +380,30 @@ header {
     align-items: center;
 }
 
+.vision__wrapper {
+    position: relative;
+    z-index: 5;
+}
+
+
+.vision__wrapper::before{
+    content: "";
+    background-image:url(../assets/images/Generation-bg-block2.png);
+    display: inline-block;
+    width: 272px;
+    height: 544px;
+    position: absolute;
+    z-index: 1;
+    right: -12%;
+    bottom: -35%;
+}
+
 .vision__title {
     color: white;
     max-width: 755px;
     margin-bottom: 50px;
+    position: relative;
+    z-index: 5;
 }
 
 .vision__btn {
@@ -309,7 +411,8 @@ header {
     border: 2px solid #3b3b3b;
     background-color: transparent;
     color: white;
-    
+    position: relative;
+    z-index: 5;
 }
 
 
@@ -326,7 +429,6 @@ header {
     display: flex;
     flex-direction: column;
     margin-right: 130px;
-    border: 1px solid green;
 }
 
 .product__title {
@@ -339,7 +441,6 @@ header {
     border: 2px solid #eff2f6;
 }
 .products__img {
-    border: 1px solid green;
 }
 
 .more {
@@ -373,8 +474,50 @@ footer {
     align-items: center;
     padding-bottom: 200px;
     padding-top: 200px;
+    position: relative;
+    z-index: 3;
 }
 
 .footer__logo {
     margin-bottom: 35px;
+    z-index: 3;
+    position: relative;
 }
+
+.footer__logo::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #eff2f6;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 3px solid #ff343d;
+    top: -2px;
+}
+
+.footer__rights {
+    z-index: 3;
+    display: inline-block;
+}
+
+footer::after {
+    position: absolute;
+    content: "PHANTOM";
+    display: inline-block;
+    width: 1056px;
+    height: 148px;
+    color: white;
+    text-shadow: 8px 14px 95px rgba(0, 0, 0, 0.05);
+    font-size: 203px;
+    font-weight: 700;
+    line-height: 101px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    right: 23%;
+    bottom: 30%;
+}    
