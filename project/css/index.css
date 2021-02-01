@@ -110,28 +110,24 @@ header {
     flex-direction: column;
     position: relative;
 }
-/*
+
 header::before {
     content: "MARS";
     display: inline-block;
-    width: 716px;
-    height: 1284px;
-    font-family: 'Montserrat-Bold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #ff343d;
-    font-size: 435px;
+    font-size: 385px;
     position: absolute;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    top: -29%;
-    left: 52%;
-    z-index: 4;
     text-shadow: 0 0 55px rgb(0 1 1 / 15%);
+    z-index: 4;
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    right: -70px;
+    top: -30px;
 }
-*/
+
 
 /*HEADER TOP*/
 .header-top {
