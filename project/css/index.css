@@ -114,7 +114,7 @@ header {
 header::before {
     content: "MARS";
     display: inline-block;
-    font-family: 'Montserrat-Bold', sans-serif;
+    font-family: 'Montserratgit', sans-serif;
     font-weight: 700;
     color: #ff343d;
     font-size: 385px;
