@@ -14,18 +14,15 @@ Regular 400, Bold 700
     box-sizing: border-box;
 
 }
-
 a {
     text-decoration: none;
     display: inline-block;
 }
-
 ul {
     margin: 0;
     list-style: circle;
     list-style-position: inside;
 }
-
 /* Общие стили */
 html,
 body {
@@ -114,7 +111,7 @@ header {
 header::before {
     content: "MARS";
     display: inline-block;
-    font-family: 'Montserratgit', sans-serif;
+    font-family: 'Montserrat';
     font-weight: 700;
     color: #ff343d;
     font-size: 385px;
@@ -184,26 +181,12 @@ header::before {
     position: relative;
     z-index: 5;
 }
-
 .menu__link {
     color: white;
     font-family: 'Montserrat-Bold', sans-serif;
     font-size: 16px;
     font-weight: 700;
     position: relative;
-}
-
-.menu__link::after {
-    content: "";
-    width: 80px;
-    height: 1px;
-    background-color: white;
-    opacity: 30%;
-    display: inline-block;
-    position: absolute;
-    bottom: -3px;
-    right: -2px;
-
 }
 .menu__icon {
     margin-left: 40px;
@@ -219,10 +202,13 @@ header::before {
 
 .header__content-slider {
     position: relative;
+    z-index: 5;
 }
 .header__content-slider::after {
     content: "Schroll down";
     position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     writing-mode: vertical-rl;
     width: 14px;
     height: 130px;
@@ -271,8 +257,13 @@ header::before {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    left: 20%;
-    top: -8%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 
@@ -542,6 +533,76 @@ footer::before {
     h4 {
         font-size: 29px;
     }
+        /*HEADER*/
+            header::before {
+            
+            }
+            .header-top {
+                padding-top: 25px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-bottom: 10px;
+            }
+            .header-top__info {
+                padding-left: 0;
+                flex-direction: column;
+                align-items:baseline;
+            }
+            .header-top__logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .header-top__num {
+            padding-left: 15px;
+            }
+            .header-top__num::before {
+            left: 0;
+            top: 9px;
+            }
+            .header-top__menu {
+                padding-right: 0;
+            }
+            .menu__link {
+                display: none;
+            }
+            .menu__icon {
+                margin-left: 0;
+            }
+            .header__content {
+                padding-top: 0px;
+                flex-wrap: wrap;
+                flex-grow: 1;
+                justify-content: baseline;
+            }
+            .article__title {
+                margin-bottom: 10px;
+            }
+            .article__subtitle {
+                width: 350px;
+            }
+            .header__content-slider {
+                flex: 0 0 10%;
+                order: 3;
+            }.header__content-article {
+                order: 2;
+                flex: 0 0 90%;
+                padding-left: 20px;
+            }
+            .header-content__image {
+                order: 1;
+                flex: 0 0 100%;
+                display: flex;
+                margin-bottom: 0px;
+                justify-content: center;
+                align-items: center;
+            }
+            .header-content__img {
+                max-width: 960px;
+            }
+            .header-content__image::after {
+                max-width: 800px;
+                max-height: 800px;
+        }
     .about {
         height: 45vh;
     }
@@ -605,12 +666,81 @@ footer::before {
         font-size: 55px;
     }
     h4 {
-        font-size: 20px;
+        font-size: 30px;
     }
     p {
-        font-size: 16px;
+        font-size: 22px;
     }
-    /*HEADER*/
+            /*HEADER*/
+            header::before {
+            
+            }
+            .header-top {
+                padding-top: 25px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-bottom: 10px;
+            }
+            .header-top__info {
+                padding-left: 0;
+                flex-direction: column;
+                align-items:baseline;
+            }
+            .header-top__logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .header-top__num {
+            padding-left: 15px;
+            }
+            .header-top__num::before {
+            left: 0;
+            top: 9px;
+            }
+            .header-top__menu {
+                padding-right: 0;
+            }
+            .menu__link {
+                display: none;
+            }
+            .menu__icon {
+                margin-left: 0;
+            }
+            .header__content {
+                padding-top: 0px;
+                flex-wrap: wrap;
+                flex-grow: 1;
+                justify-content: baseline;
+            }
+            .article__title {
+                margin-bottom: 10px;
+            }
+            .article__subtitle {
+                width: 350px;
+            }
+            .header__content-slider {
+                flex: 0 0 10%;
+                order: 3;
+            }.header__content-article {
+                order: 2;
+                flex: 0 0 90%;
+                padding-left: 20px;
+            }
+            .header-content__image {
+                order: 1;
+                flex: 0 0 100%;
+                display: flex;
+                margin-bottom: 0px;
+                justify-content: center;
+                align-items: center;
+            }
+            .header-content__img {
+                max-width: 960px;
+            }
+            .header-content__image::after {
+                max-width: 800px;
+                max-height: 800px;
+        }
     /*ABOUT*/
     .about {
     height: 100%;
@@ -759,7 +889,76 @@ footer::before {
     h4 {
         font-size: 20px;
     }
-    /*HEADER*/
+        /*HEADER*/
+        header::before {
+            
+        }
+        .header-top {
+            padding-top: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 10px;
+        }
+        .header-top__info {
+            padding-left: 0;
+            flex-direction: column;
+            align-items:baseline;
+        }
+        .header-top__logo {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        .header-top__num {
+        padding-left: 15px;
+        }
+        .header-top__num::before {
+        left: 0;
+        top: 9px;
+        }
+        .header-top__menu {
+            padding-right: 0;
+        }
+        .menu__link {
+            display: none;
+        }
+        .menu__icon {
+            margin-left: 0;
+        }
+        .header__content {
+            padding-top: 0px;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            justify-content: baseline;
+        }
+        .article__title {
+            margin-bottom: 10px;
+        }
+        .article__subtitle {
+            width: 350px;
+        }
+        .header__content-slider {
+            flex: 0 0 10%;
+            order: 3;
+        }.header__content-article {
+            order: 2;
+            flex: 0 0 90%;
+            padding-left: 20px;
+        }
+        .header-content__image {
+            order: 1;
+            flex: 0 0 100%;
+            display: flex;
+            margin-bottom: 0px;
+            justify-content: center;
+            align-items: center;
+        }
+        .header-content__img {
+            max-width: 720px;
+        }
+        .header-content__image::after {
+            max-width: 600px;
+            max-height: 600px;
+    }
     /*ABOUT*/
     .about {
     height: 0%;
@@ -908,6 +1107,76 @@ footer::before {
         font-size: 20px;
     }
     /*HEADER*/
+        /*HEADER*/
+        header::before {
+            display: none;
+        }
+        .header-top {
+            padding-top: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 10px;
+        }
+        .header-top__info {
+            padding-left: 0;
+            flex-direction: column;
+            align-items:baseline;
+        }
+        .header-top__logo {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        .header-top__num {
+        padding-left: 15px;
+        }
+        .header-top__num::before {
+        left: 0;
+        top: 9px;
+        }
+        .header-top__menu {
+            padding-right: 0;
+        }
+        .menu__link {
+            display: none;
+        }
+        .menu__icon {
+            margin-left: 0;
+        }
+        .header__content {
+            padding-top: 0px;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            justify-content: baseline;
+        }
+        .article__title {
+            margin-bottom: 10px;
+        }
+        .article__subtitle {
+            width: 220px;
+        }
+        .header__content-slider {
+            flex: 0 0 10%;
+            order: 3;
+        }.header__content-article {
+            order: 2;
+            flex: 0 0 90%;
+            padding-left: 10px;
+        }
+        .header-content__image {
+            order: 1;
+            flex: 0 0 100%;
+            display: flex;
+            margin-bottom: 0px;
+            justify-content: center;
+            align-items:center;
+        }
+        .header-content__img {
+            width: 360px;
+        }
+        .header-content__image::after {
+            max-width: 300px;
+            max-height: 300px;
+    }
     /*ABOUT*/
     .about {
     height: 0%;
@@ -1053,6 +1322,76 @@ footer::before {
         font-size: 20px;
     }
     /*HEADER*/
+        /*HEADER*/
+        header::before {
+            display: none;
+        }
+        .header-top {
+            padding-top: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 10px;
+        }
+        .header-top__info {
+            padding-left: 0;
+            flex-direction: column;
+            align-items:baseline;
+        }
+        .header-top__logo {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        .header-top__num {
+        padding-left: 15px;
+        }
+        .header-top__num::before {
+        left: 0;
+        top: 9px;
+        }
+        .header-top__menu {
+            padding-right: 0;
+        }
+        .menu__link {
+            display: none;
+        }
+        .menu__icon {
+            margin-left: 0;
+        }
+        .header__content {
+            padding-top: 0px;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            justify-content: baseline;
+        }
+        .article__title {
+            margin-bottom: 10px;
+        }
+        .article__subtitle {
+            width: 220px;
+        }
+        .header__content-slider {
+            flex: 0 0 10%;
+            order: 3;
+        }.header__content-article {
+            order: 2;
+            flex: 0 0 90%;
+            padding-left: 10px;
+        }
+        .header-content__image {
+            order: 1;
+            flex: 0 0 100%;
+            display: flex;
+            margin-bottom: 0px;
+            justify-content: center;
+            align-items:center;
+        }
+        .header-content__img {
+            width: 360px;
+        }
+        .header-content__image::after {
+            max-width: 300px;
+            max-height: 300px;
+    }
     /*ABOUT*/
     .about {
     height: 0%;
@@ -1190,6 +1529,9 @@ footer::before {
     h4 {
         font-size: 20px;
     }
+    p {
+        font-size: 16px;
+    }
     /*HEADER*/
     header::before {
         display: none;
@@ -1257,15 +1599,8 @@ footer::before {
         width: 360px;
     }
     .header-content__image::after {
-        width: 300px;
-        height: 300px;
-        transform: translate(10%, -16%);
-        -webkit-transform: translate(10%, -16%);
-        -moz-transform: translate(10%, -16%);
-        -ms-transform: translate(10%, -16%);
-        -o-transform: translate(10%, -16%);
-        top: 0%;
-        left: 0%;
+        max-width: 300px;
+        max-height: 300px;
 }
     /*ABOUT*/
     .about {
