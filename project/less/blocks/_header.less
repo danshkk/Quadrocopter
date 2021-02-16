@@ -1,0 +1,147 @@
+// main: ./../main.less
+
+/*Header*/
+header {
+    height: 100vh;
+    background: rgb(239,242,246);
+    background: linear-gradient(90deg, rgba(239,242,246,1) 62%, rgba(255,52,61,1) 62%);
+    background-position:center;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &::before {
+        content: "MARS";
+        display: inline-block;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        color: #ff343d;
+        font-size: 385px;
+        position: absolute;
+        text-shadow: 0 0 55px rgb(0 1 1 / 15%);
+        z-index: 4;
+        writing-mode: vertical-lr;
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: vertical-lr;
+        right: -70px;
+        top: -30px;
+    }
+}
+
+
+
+
+/*HEADER TOP*/
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    &__info {
+        padding-left: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo {
+        margin-right: 90px;
+        position: relative;
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: #eff2f6;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border: 3px solid #ff343d;
+            top: -2px;
+        }
+    }
+    &__num {
+        position: relative;
+        &::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            position: absolute;
+            background-image:url(../assets/images/Footer-Phone.png);
+            top: 8px;
+            left: -20px;
+        }
+    }
+    &__menu {
+        padding-right: 180px;
+        position: relative;
+        z-index: 5;
+    }
+}
+
+
+
+
+
+
+
+/*HEADER CONTENT*/
+.header__content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-slider {
+        position: relative;
+        z-index: 5;
+        &::after {
+            content: "Schroll down";
+            position: absolute;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            writing-mode: vertical-rl;
+            width: 14px;
+            height: 130px;
+            -webkit-writing-mode: vertical-rl;
+            -ms-writing-mode: vertical-rl;
+        }
+    }
+    &-article {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+.header-content__image {
+    position: relative;
+    z-index: 5;
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        width: 652px;
+        height: 652px;
+        background-color: #ffffff;
+        display: inline-block;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+}
+.header-content__img {
+    position: relative;
+    z-index: 5;
+}
+

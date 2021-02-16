@@ -1,0 +1,29 @@
+// main: ./../main.less
+
+.generation {
+    display: flex;
+    &__vision {
+        background-color: #232323;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &::before{
+            content: "";
+            background-image:url(../assets/images/Generation-bg-block2.png);
+            background-repeat:no-repeat; 
+            background-size:cover;
+            display: inline-block;
+            width: 272px;
+            height: 544px;
+            position: absolute;
+            z-index: 1;
+            right: 0%;
+            bottom: 5%;
+        }
+    }
+}
+
+
