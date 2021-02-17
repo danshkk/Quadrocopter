@@ -10,22 +10,36 @@ header {
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
     &::before {
         content: "MARS";
         display: inline-block;
+        z-index: 4;
+        position: absolute;
         font-family: 'Montserrat';
         font-weight: 700;
         color: #ff343d;
-        font-size: 385px;
-        position: absolute;
+        font-size: 21vw;
         text-shadow: 0 0 55px rgb(0 1 1 / 15%);
-        z-index: 4;
         writing-mode: vertical-lr;
         -webkit-writing-mode: vertical-lr;
         -ms-writing-mode: vertical-lr;
-        right: -70px;
-        top: -30px;
+        right: -5%;
+        top: -3%;
+        // transform: rotate(90deg);
+        // line-height: 272px;
     }
+    // &::after {
+    //     content: "";
+    //     display: inline-block;
+    //     z-index: 4;
+    //     position: absolute;
+    //     background-image: url(../../assets/images/MARS.png);
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     width: 282px;
+    //     height: 1138px;
+    // }
 }
 
 
