@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./libraries/WOW-master/css/libs/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -38,11 +40,11 @@
         </div>
     </header>
     <section class="about">
-        <div class="about__promo">
+        <div class="about__promo wow animate__slideInLeft" data-wow-duration="1s">
             <h3 class="about__promo-title">Tap to fly</h3>
             <p class="about__promo-subtitle">Lorum ipsum dolor sit amet.</p>
         </div>
-        <div class="about-potential">
+        <div class="about-potential wow animate__slideInRight" data-wow-duration="1.5s">
             <h3 class="about-potential__title">Fly higher than before</h3>
             <button class="about-potential__btn btn">view more</button>
         </div>
@@ -69,8 +71,8 @@
         </div>
     </section>
     <section class="generation">
-        <img class="generation__bg" src="./assets/images/Generation-bg-block1.png" alt="">
-        <div class="generation__vision vision">
+        <img class="generation__bg wow animate__slideInLeft" data-wow-duration="1.5s" src="./assets/images/Generation-bg-block1.png" alt="">
+        <div class="generation__vision vision wow animate__slideInRight" data-wow-duration="1.5s">
             <div class="vision__wrapper">
                 <h2 class="vision__title">New <span class="vision__title--red">generation</span> of vision<span
                         class="vision__title--red">.</span></h2>
@@ -82,18 +84,23 @@
         <div class="products__content product">
             <h2 class="product__title">New <span class="product__title--red">generation</span> of flying<span
                     class="product__title--red">.</span></h2>
-            <button class="product__btn btn">Products</button>
+            <button class="product__btn btn wow animate__heartBeat" data-wow-delay="1.5s" data-wow-duration="2s" data-wow-iteration="infinite" >Products</button>
         </div>
-        <img class="products__img" src=".//assets/images/Products-Drone.png" alt="">
+        <img class="products__img wow animate__slideInRight" data-wow-duration="1.5s" src=".//assets/images/Products-Drone.png" alt="">
     </section>
     <section class="more">
-        <h2 class="more__title">Start your journey.</h2>
+        <h2 class="more__title wow animate__zoomIn" data-wow-duration="2s">Start your journey.</h2>
         <button class="more__btn btn">View More</button>
     </section>
     <footer class="footer">
         <a class="footer__logo" href="">MARS</a>
         <span class="footer__rights">2016 Copyright. All rights reserved by Symu.co</span>
     </footer>
+    
+    <script src="./libraries/WOW-master/dist/wow.min.js"></script>
+    <script>
+        new WOW(). init ();
+    </script>
 </body>
 
 </html>
